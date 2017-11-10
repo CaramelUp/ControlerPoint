@@ -70,11 +70,11 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/fbuenod/.gradle/caches/
 	android:label
 		ADDED from /home/fbuenod/Documentos/ProjetosAndroid/ControlerPoint/app/src/main/AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from /home/fbuenod/Documentos/ProjetosAndroid/ControlerPoint/app/src/main/AndroidManifest.xml:9:9-44
+		ADDED from /home/fbuenod/Documentos/ProjetosAndroid/ControlerPoint/app/src/main/AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from /home/fbuenod/Documentos/ProjetosAndroid/ControlerPoint/app/src/main/AndroidManifest.xml:7:9-39
+		ADDED from /home/fbuenod/Documentos/ProjetosAndroid/ControlerPoint/app/src/main/AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from /home/fbuenod/Documentos/ProjetosAndroid/ControlerPoint/app/src/main/AndroidManifest.xml:6:9-36
+		ADDED from /home/fbuenod/Documentos/ProjetosAndroid/ControlerPoint/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from /home/fbuenod/Documentos/ProjetosAndroid/ControlerPoint/app/src/main/AndroidManifest.xml:11:9-40
 activity#com.caramelup.controlerpoint.MainActivity
