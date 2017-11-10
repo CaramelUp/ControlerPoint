@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Registros">
+        <menu>
+            <item
+                android:id="@+id/RegiEntrada"
+                android:icon="@drawable/in"
+                android:title="Registrar Entrada" />
+            <item
+                android:id="@+id/RegiSaida"
+                android:icon="@drawable/out"
+                android:title="Registrar Saida" />
+        </menu>
+    </item>
+
+</menu>
