@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 import com.caramelup.controlerpoint.Registros.RegistrarEntradaActivity;
 import com.caramelup.controlerpoint.Registros.RegistrarSaidaActivity;
@@ -37,6 +38,24 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        Button buttonRegEntrada = (Button)findViewById(R.id.buttonRegEntrada);
+        buttonRegEntrada.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RegistrarEntradaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button buttonRegSaida = (Button)findViewById(R.id.buttonRegSaida);
+        buttonRegSaida.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RegistrarSaidaActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

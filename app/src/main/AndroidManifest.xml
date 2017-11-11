@@ -19,9 +19,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Registros.RegistrarEntradaActivity" />
-        <activity android:name=".Registros.RegistrarSaidaActivity" />
-        <activity android:name=".Registros.RelatorioActivity"></activity>
+        <activity android:name=".Registros.RegistrarEntradaActivity"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Registros.RegistrarSaidaActivity"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Registros.RelatorioActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".MainActivity" ></activity>
     </application>
+
 
 </manifest>

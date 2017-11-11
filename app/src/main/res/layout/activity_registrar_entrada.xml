@@ -16,29 +16,43 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/dataatual"
+                android:layout_width="wrap_content"
+                android:layout_height="86dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fadingEdge="none"
+                android:gravity="center_horizontal"
+                android:hint="Data de Entrada"
+                android:inputType="textPersonName"
+                android:textSize="36sp" />
+        </LinearLayout>
+
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/dataatual"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="Data de Entrada"
-                    android:inputType="textPersonName" />
-
-                <EditText
-                    android:id="@+id/horaatual"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="Hora de Entrada"
-                    android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/horaatual"
+                android:layout_width="wrap_content"
+                android:layout_height="86dp"
+                android:layout_weight="1"
+                android:fadingEdge="none"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="Hora de Entrada"
+                android:inputType="textPersonName"
+                android:textSize="36sp" />
 
             </LinearLayout>
 
@@ -47,12 +61,31 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/Botao"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="Registrar Entrada" />
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/Botao"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#008342"
+                        android:textColor="#ffffff"
+                        android:text="Atualizar Valores" />
+
+                    <Button
+                        android:id="@+id/buttonBaterPonto"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#c44d30"
+                        android:text="Bater Ponto de Entrada"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
 

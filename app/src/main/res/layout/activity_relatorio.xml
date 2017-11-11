@@ -21,66 +21,99 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="Data Inicial"
-                    android:textAlignment="center"
-                    android:textSize="24dp" />
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:layout_weight="1"
-                    android:text="Data Final"
-                    android:textAlignment="center"
-                    android:textSize="24dp" />
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="Data Inicial"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="24dp" />
+
+                    <Button
+                        android:id="@+id/btnDataIni"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#0892ae"
+                        android:text="Escolher Data"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/selDataIni"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center" />
+                </LinearLayout>
 
             </LinearLayout>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@android:color/black" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/btnDataIni"
-                    android:layout_width="196dp"
-                    android:layout_height="50dp"
-                    android:text="Selecionar"
-                    android:textAlignment="center"
-                    android:textSize="24dp" />
-
-                <Button
-                    android:id="@+id/btnDataFim"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:text="Selecionar"
-                    android:textAlignment="center"
-                    android:textSize="24dp" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:text="Data Final"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="24dp" />
+
+                    <Button
+                        android:id="@+id/btnDataFim"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#0892ae"
+                        android:text="Escolher Data"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/selDataFim"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:textAlignment="center" />
+                </LinearLayout>
 
             </LinearLayout>
 
-            <LinearLayout
+            <Button
+                android:id="@+id/button3"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <EditText
-                    android:id="@+id/selDataIni"
-                    android:layout_width="197dp"
-                    android:layout_height="50dp"
-                    android:textAlignment="center" />
-                <EditText
-                    android:id="@+id/selDataFim"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:textAlignment="center" />
-
-            </LinearLayout>
+                android:layout_height="74dp"
+                android:backgroundTint="#025363"
+                android:text="Gerar Relatorio"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
 
         </LinearLayout>
 

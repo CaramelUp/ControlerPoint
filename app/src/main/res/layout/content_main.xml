@@ -4,8 +4,228 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.caramelup.controlerpoint.MainActivity"
     tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@android:color/background_light">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/textView3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:textColor="@color/colorPrimary"
+                                            android:text="Horas Trabalhadas"
+                                            android:textAlignment="center"
+                                            android:textSize="24sp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/textView4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:textColor="@color/colorPrimary"
+                                            android:text="Este Mês!"
+                                            android:textAlignment="center"
+                                            android:textSize="24sp"
+                                            android:textStyle="bold" />
+
+                                        <TextView
+                                            android:id="@+id/textView5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:textColor="@color/colorPrimary"
+                                            android:text="00:00:00"
+                                            android:textAlignment="center"
+                                            android:textSize="36sp"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="match_parent"
+                            android:layout_height="9dp"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="132dp"
+                            app:cardBackgroundColor="@android:color/background_light">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/buttonRegEntrada"
+                                    android:backgroundTint="#0892ae"
+                                    android:textColor="#ffffff"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="65dp"
+                                    android:text="Registrar Entrada" />
+
+                                <Button
+                                    android:id="@+id/buttonRegSaida"
+                                    android:backgroundTint="#045869"
+                                    android:textColor="#ffffff"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="65dp"
+                                    android:text="Registrar Saida" />
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <Button
+                            android:id="@+id/button5"
+                            android:layout_width="match_parent"
+                            android:layout_height="9dp"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Entradas Recentes!"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textViewVaz"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sem Entradas!!!"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <ListView
+                                    android:id="@+id/ListViewEntrada"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center" />
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+                        <Button
+                            android:id="@+id/button6"
+                            android:layout_width="match_parent"
+                            android:layout_height="9dp"
+                            android:text="Button"
+                            android:visibility="invisible" />
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Saidas Recentes!"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/textViewVaz2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sem Saidas!!!"
+                                    android:textAlignment="center"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <ListView
+                                    android:id="@+id/ListViewSaida"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center" />
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>
