@@ -13,6 +13,10 @@
                 android:id="@+id/RegiSaida"
                 android:icon="@drawable/out"
                 android:title="Registrar Saida" />
+            <item
+                android:id="@+id/selRelatorio"
+                android:icon="@drawable/rel"
+                android:title="Gerar Relatorio" />
         </menu>
     </item>
 

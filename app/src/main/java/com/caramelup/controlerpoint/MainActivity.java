@@ -16,6 +16,7 @@ import android.view.MenuItem;
 
 import com.caramelup.controlerpoint.Registros.RegistrarEntradaActivity;
 import com.caramelup.controlerpoint.Registros.RegistrarSaidaActivity;
+import com.caramelup.controlerpoint.Registros.Relatorio;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -81,8 +82,11 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.RegiEntrada) {
             Intent intent = new Intent(MainActivity.this, RegistrarEntradaActivity.class);
             startActivity(intent);
-        } else if (id == R.id.RegiSaida) {
+        }else if (id == R.id.RegiSaida) {
             Intent intent = new Intent(MainActivity.this, RegistrarSaidaActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.selRelatorio){
+            Intent intent = new Intent(MainActivity.this, Relatorio.class);
             startActivity(intent);
         }
 
