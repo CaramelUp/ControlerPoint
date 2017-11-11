@@ -1,20 +1,19 @@
 package com.caramelup.controlerpoint.Registros;
 
 import android.app.DatePickerDialog;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+
 import com.caramelup.controlerpoint.R;
+
 import java.util.Calendar;
 
-/**
- * Created by reginaldo on 10/11/17.
- */
+public class RelatorioActivity extends AppCompatActivity implements View.OnClickListener{
 
-public class Relatorio extends AppCompatActivity implements View.OnClickListener {
     private int dia,mes,ano;
     EditText selDataIni, selDataFim;
     Button btnDataIni, btnDataFim;
@@ -41,7 +40,7 @@ public class Relatorio extends AppCompatActivity implements View.OnClickListener
             mes=c.get(Calendar.MONTH);
             ano=c.get(Calendar.YEAR);
 
-            DatePickerDialog datePickerDialog = new DatePickerDialog(Relatorio.this, new DatePickerDialog.OnDateSetListener() {
+            DatePickerDialog datePickerDialog = new DatePickerDialog(RelatorioActivity.this, new DatePickerDialog.OnDateSetListener() {
 
                 @Override
                 public void onDateSet(DatePicker datePicker, int year, int monthOfYear, int dayOfMonth) {
@@ -56,11 +55,11 @@ public class Relatorio extends AppCompatActivity implements View.OnClickListener
             mes=c.get(Calendar.MONTH);
             ano=c.get(Calendar.YEAR);
 
-            DatePickerDialog datePickerDialog = new DatePickerDialog(Relatorio.this, new DatePickerDialog.OnDateSetListener() {
+            DatePickerDialog datePickerDialog = new DatePickerDialog(RelatorioActivity.this, new DatePickerDialog.OnDateSetListener() {
 
                 @Override
                 public void onDateSet(DatePicker datePicker, int year, int monthOfYear, int dayOfMonth) {
-                    selDataIni.setText(dayOfMonth+"/"+(monthOfYear+1)+"/"+year);
+                    selDataFim.setText(dayOfMonth+"/"+(monthOfYear+1)+"/"+year);
                 }
             },ano,mes,dia);
             datePickerDialog.show();

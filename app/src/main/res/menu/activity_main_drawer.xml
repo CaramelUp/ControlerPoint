@@ -14,7 +14,7 @@
                 android:icon="@drawable/out"
                 android:title="Registrar Saida" />
             <item
-                android:id="@+id/selRelatorio"
+                android:id="@+id/GeraRelatorio"
                 android:icon="@drawable/rel"
                 android:title="Gerar Relatorio" />
         </menu>
